@@ -32,6 +32,7 @@ class FirebaseServices {
       await auth.signOut();
     } catch (e) {
       print('Error during sign out: $e');
+      // ignore: use_rethrow_when_possible
       throw e;
     }
   }
